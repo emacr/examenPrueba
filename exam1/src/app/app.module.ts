@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormularioComponent } from './formulario/formulario.component';
 
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'; //hago importe 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'; //angular material
+import { HomeComponent } from './home/home.component'; //hago importe 
 
 @NgModule({
   declarations: [
     AppComponent,
-   
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
