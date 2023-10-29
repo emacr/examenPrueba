@@ -1,11 +1,14 @@
-<br/>
-<br/>
-<br/>
+
 <div class="forms-container">
+    <fieldset class="formSet">
 <form #form="ngForm" ngNativeValidate>
-<input type="text" placeholder="UserName " id="UserName" />
-<input type="text" placeholder="Email " id="Email" />
-<input type="text" placeholder="Password " id="Password" />
+    <label for="UserName">UserName = </label>
+<input type="text" placeholder="UserName " id="UserName" required /><br/>
+<label for="Email">Email = </label>
+<input class="email" type="text" placeholder="Email " id="Email" /><br/>
+<label for="Password">Password = </label>
+<input type="text" placeholder="Password " id="Password" /><br/>
 <input type="button" value="Enviar" id="enviar"/>
 </form>
+</fieldset>
 </div>

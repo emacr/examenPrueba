@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formsM-container">
+        <form #form="ngForm" ngNativeValidate class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput [(ngModel)]="formdata.name" placeholder="Ex. emma" value="" name="name" required >
+              </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Deja un comentario</mat-label>
+                <textarea matInput [(ngModel)]="formdata.comment" placeholder="Ejemplo: me siento..." name="comment"></textarea>
+              </mat-form-field><br>
+              <button type="submit" (click) = "onSubmit()" [disabled]="!form.valid" mat-raised-button color="primary">Enviar</button>
+              <button type="reset" >Eliminar</button>
+        </form>
+        </div> 
+</body>
+</html>
+
